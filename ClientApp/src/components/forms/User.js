@@ -243,7 +243,7 @@ export const User = () => {
                         <br />
                         <label>Fecha de Nacimiento: </label>
                         <br />
-                        <input placeholder="AAAA-MM-DD"
+                        <Cleave placeholder="AAAA-MM-DD"
                         className="form-control"
                         name="fechaNacimiento"
                         options={{
@@ -336,7 +336,7 @@ export const User = () => {
                         <br />
                         <label>Fecha de Nacimiento: </label>
                         <br />
-                        <input placeholder="AAAA-MM-DD"
+                        <Cleave placeholder="AAAA-MM-DD"
                         className="form-control"
                         name="fechaNacimiento"
                         value={selectedUser && selectedUser.fechaNacimiento}
