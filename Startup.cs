@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
 
 namespace PruebaAloe
 {
@@ -20,6 +21,10 @@ namespace PruebaAloe
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Establecer uso de BD datos al iniciar la aplicacion
+            services.AddDbContext<AppContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("Aloe_Software"));
+            });
 
             services.AddControllersWithViews();
 
