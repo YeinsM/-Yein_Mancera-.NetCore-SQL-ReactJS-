@@ -14,7 +14,6 @@ export class Home extends Component {
         <ul>
           <li>El campo de texto -Cédula- debe tener una máscara sencilla para la cédula Dominicana (###-#######-#).</li>
           <li>El campo de DropDown o Select -Departamentos- debe tener su propio modelo por igual y cargar las opciones en el DropDownlist dentro del formulario “Agregar Usuarios” desde la base de datos con los departamentos ya existentes.</li>
-          <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
         </ul>
         <p><b>NOTA: Esta prueba vence a las 11pm, debes hacer pull request de lo logrado hasta ese momento.</b></p>
       </div>
