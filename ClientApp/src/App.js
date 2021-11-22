@@ -8,8 +8,8 @@ import { Counter } from './components/Counter';
 import './custom.css'
 
 // Importar componentes propios
-import { Department } from './components/Department';
-import { User } from './components/User';
+import { Department } from './components/forms/Department';
+import { User } from './components/forms/User';
 
 export default class App extends Component {
   static displayName = App.name;
