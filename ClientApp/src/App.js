@@ -7,6 +7,10 @@ import { Counter } from './components/Counter';
 
 import './custom.css'
 
+// Importar componentes propios
+import { Department } from './components/Department';
+import { User } from './components/User';
+
 export default class App extends Component {
   static displayName = App.name;
 
@@ -16,6 +20,8 @@ export default class App extends Component {
         <Route exact path='/' component={Home} />
         <Route path='/counter' component={Counter} />
         <Route path='/fetch-data' component={FetchData} />
+        <Route path='/departments' component={Department} />
+        <Route path='/users' component={User} />
       </Layout>
     );
   }
